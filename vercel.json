@@ -6,6 +6,10 @@
       "destination": "dist/index.js"
     },
     {
+      "source": "/assets/(.*)",
+      "destination": "dist/public/assets/$1"
+    },
+    {
       "source": "/(.*)",
       "destination": "dist/public/index.html"
     }
