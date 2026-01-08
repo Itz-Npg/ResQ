@@ -16,7 +16,20 @@ async function build() {
     platform: "node",
     format: "esm",
     outfile: "dist/index.js",
-    external: ["better-sqlite3", "pg", "ws", "express", "vite", "path", "fs", "url", "http", "https"],
+    external: [
+      "better-sqlite3",
+      "pg",
+      "ws",
+      "express",
+      "vite",
+      "path",
+      "fs",
+      "url",
+      "http",
+      "https",
+      "@babel/core",
+      "lightningcss"
+    ],
     sourcemap: true,
     mainFields: ["module", "main"],
     banner: {
