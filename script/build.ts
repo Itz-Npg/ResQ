@@ -28,7 +28,10 @@ async function build() {
       "http",
       "https",
       "@babel/core",
-      "lightningcss"
+      "lightningcss",
+      "@replit/vite-plugin-cartographer",
+      "@replit/vite-plugin-dev-banner",
+      "@replit/vite-plugin-runtime-error-modal"
     ],
     sourcemap: true,
     mainFields: ["module", "main"],
